@@ -1,0 +1,30 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Namaste React",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandrashekhar-patil/namaste-react.git"
+  },
+  "keywords": [],
+  "author": "chandrashekhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandrashekhar-patil/namaste-react/issues"
+  },
+  "homepage": "https://github.com/chandrashekhar-patil/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist":[
+    "last 10 Chrome version"
+  ]
+}
