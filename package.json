@@ -3,30 +3,30 @@
   "version": "1.0.0",
   "description": "Namaste React",
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chandrashekhar-patil/namaste-react.git"
+    "url": "git+https://github.com/CThinkz/namaste-react.git"
   },
   "keywords": [],
   "author": "chandrashekhar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chandrashekhar-patil/namaste-react/issues"
+    "url": "https://github.com/CThinkz/namaste-react/issues"
   },
-  "homepage": "https://github.com/chandrashekhar-patil/namaste-react#readme",
+  "homepage": "https://github.com/CThinkz/namaste-react#readme",
   "devDependencies": {
-    "parcel": "^2.9.3",
+    "parcel": "^2.10.0",
     "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "browserlist":[
+  "browserlist": [
     "last 10 Chrome version"
   ]
 }

@@ -4,8 +4,33 @@
   </head>
   <body>
     <div id="root">
-      <h1>I was already here</h1>
+      <!-- <h1>I was already here</h1> -->
     </div>
-    <script type="module" src="./App.js"></script>
+
+    <!-- we can't add async here, because if we add async then the react scripts
+    won't run, but we can add defer to all scripts, because that will make scripts to get execute in the order they have written, its okay even if don't add defer -->
+    <!-- Inception -->
+    <script
+      defer
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      defer
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script defer src="./01Inception.js"></script>
+    <div id="root-011"></div>
+    <div id="root-012"></div>
+
+    <!-- LayingTheFoundation -->
+    <div id="root-021"></div>
+    <div id="root-022"></div>
+    <div id="root-023"></div>
+    <div id="root-024"></div>
+    <div id="root-025"></div>
+    <div id="root-026"></div>
+    <script type="module" src="./03LayingTheFoundation.js"></script>
   </body>
 </html>
