@@ -17,6 +17,8 @@ root22.render(<H1 />);
 const Component1 = () => (
   <h4>I am a component and I have an element inside {element1}</h4>
 );
+console.log('Component1()', Component1());
+console.log('<Component1/>', <Component1 />);
 const root23 = ReactDOM.createRoot(document.getElementById('root-023'));
 root23.render(<Component1 />);
 
@@ -34,34 +36,44 @@ const root25 = ReactDOM.createRoot(document.getElementById('root-025'));
 root25.render(element2);
 
 //Can we include Component inside React Element? YES
-const Component2 = <div> I am a Component</div>;
+const Component2 = () => <div> I am a Component</div>;
 const element3 = (
-  <h1>I am an element and I have a component inside {Component2}</h1>
+  <h1>I am an element and I have a component inside {<Component2 />}</h1>
 );
-console.log('Component2', Component2);
-console.log('Component2', <Component2 />);
+console.log('Component2()', Component2());
+console.log('<Component2/>', <Component2 />);
+console.log('element3', element3);
 const root26 = ReactDOM.createRoot(document.getElementById('root-026'));
 root26.render(element3);
 
 const PrintingTheState = () => {
-  const [state, setState] = useState('I have a state');
-  return <div>This Component has a statet</div>;
+  // const [state, setState] = useState('I have a state');
+  return <div>This Component has a state</div>;
 };
+console.log('PrintingTheState()', PrintingTheState());
 console.log('PrintingTheState', <PrintingTheState />);
 
 const PrintingTheProps = (props) => {
-  console.log('props', props);
   return (
     <div>
-      This Component has 2 props {props.id} and {props.name}{' '}
+      This Component has 2 props {props?.id} and {props?.name}
     </div>
   );
 };
 const PropsWrapper = () => {
-  return <PrintingTheProps id='dummy' name='youhaveaprop' />;
+  return <PrintingTheProps id='dummy' name='YouHaveProp' />;
 };
-console.log('PropsWrapper', <PropsWrapper />);
-console.log('PrintingTheProps', <PrintingTheProps />);
+console.log('PrintingTheProps()', PrintingTheProps());
+console.log('<PrintingTheProps/>', <PrintingTheProps />);
+console.log('PropsWrapper()', PropsWrapper());
+console.log('<PropsWrapper/>', <PropsWrapper />);
+
 const root28 = ReactDOM.createRoot(document.getElementById('root-028'));
 root28.render(<PropsWrapper />);
 console.log('root28', root28);
+
+const ComplexComponent = () => {
+  return <Component1 />;
+};
+console.log('ComplexComponent()', ComplexComponent());
+console.log('<ComplexComponent/>', <ComplexComponent />);
